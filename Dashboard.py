@@ -5,7 +5,7 @@ from utils.countries import data_by_country
 
 
 def main():
-    st.set_page_config(layout="wide", page_title="Sessions")
+    st.set_page_config(layout="wide", page_title="Snowplow Mobile Insights")
 
     st.title("Snowplow Mobile Insights")
 
@@ -169,7 +169,7 @@ def main():
         fig.update_layout(title_text="Bounce Rate (Last 7 Days)")
         st.plotly_chart(fig, use_container_width=True)
 
-    st.subheader("screenviews")
+    st.subheader("Screen views")
 
     col1, col2, col3 = st.columns([1,1,1])
 
