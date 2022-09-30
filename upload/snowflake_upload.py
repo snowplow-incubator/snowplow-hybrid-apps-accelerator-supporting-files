@@ -1,20 +1,23 @@
 import snowflake.connector as sf
 
-# Connection details - to be modified, where needed!
-conn=sf.connect(user='your_username',password='your_password',account='your_account')
-
-def execute_query(connection, query):
-    cursor = connection.cursor()
-    cursor.execute(query)
-    cursor.close()
-
 # Variables - to be modified, where needed!
+user = 'YOUR_USERNAME'
+password = 'YOUR_PASSWORD'
+account = 'YOUR_ACCOUNT'
 warehouse='YOUR_WAREHOUSE'
 database = 'YOUR_DB'
 schema = 'ATOMIC'
 staging_table = 'SAMPLE_EVENTS_STAGED'
 target_table ='SAMPLE_EVENTS'
 csv_file = '/path/to/sample_events.csv'
+
+# Connection details - to be modified, where needed!
+conn=sf.connect(user=user, password=password, account=account)
+
+def execute_query(connection, query):
+    cursor = connection.cursor()
+    cursor.execute(query)
+    cursor.close()
 
 try:
 		# creating schema
