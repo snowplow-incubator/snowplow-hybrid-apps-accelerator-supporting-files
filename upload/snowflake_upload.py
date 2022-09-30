@@ -171,6 +171,8 @@ try:
 		print('Staging table '+ database + "." + schema + "." + staging_table +' is created')
 
 		# staging
+		sql = "USE SCHEMA " + schema
+		execute_query(conn, sql)
 		sql = 'DROP STAGE IF EXISTS DATA_STAGE'
 		execute_query(conn, sql)
 		print('Stage dropped, if applicable')
