@@ -14,6 +14,7 @@ database = 'YOUR_DB'
 schema = 'ATOMIC'
 staging_table = 'SAMPLE_EVENTS_STAGED'
 target_table ='SAMPLE_EVENTS'
+csv_file = '/path/to/sample_events.csv'
 
 try:
 		# creating schema
@@ -176,8 +177,6 @@ try:
 		print('Stage created')
 
 		# uploading
-		# Path to be modified:
-		csv_file = '/Users/your_user/path_to_csv/sample_events.csv'
 		sql = "PUT file://" + csv_file + " @DATA_STAGE AUTO_COMPRESS=true"
 		execute_query(conn, sql)
 		print('File put to stage')
