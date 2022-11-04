@@ -78,7 +78,7 @@ def main():
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
 
-        fig.update_layout(title_text="Sessions by Country (Last 7 Days)")
+        fig.update_layout(title_text="Sessions by Country")
 
         st.plotly_chart(fig, use_container_width=True)
 
@@ -97,7 +97,7 @@ def main():
             width=700,
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
         )
-        fig.update_layout(title_text="Sessions by Device (Last 7 Days)")
+        fig.update_layout(title_text="Sessions by Device")
         fig.update_traces(textposition="inside")
         fig.update_layout(uniformtext_minsize=12, uniformtext_mode="hide")
 
@@ -123,7 +123,7 @@ def main():
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
-        fig.update_layout(title_text="Total Sessions (Last 7 Days)")
+        fig.update_layout(title_text="Total Sessions")
         st.plotly_chart(fig, use_container_width=True)
         
     with col2:
@@ -142,7 +142,7 @@ def main():
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
-        fig.update_layout(title_text="Average Session Duration (Last 7 Days)")
+        fig.update_layout(title_text="Average Session Duration")
 
         st.plotly_chart(fig, use_container_width=True)
     
@@ -166,7 +166,7 @@ def main():
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
-        fig.update_layout(title_text="Bounce Rate (Last 7 Days)")
+        fig.update_layout(title_text="Bounce Rate")
         st.plotly_chart(fig, use_container_width=True)
 
     st.subheader("Screen views")
@@ -189,7 +189,7 @@ def main():
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
-        fig.update_layout(title_text="Screenviews by Day (Last 7 Days)")
+        fig.update_layout(title_text="Screenviews by Day")
 
         st.plotly_chart(fig, use_container_width=True)
 
@@ -214,7 +214,7 @@ def main():
             margin={"l": 20, "r": 20, "t": 25, "b": 0},
             legend=dict(yanchor="top", y=0.99, xanchor="right", x=0.99),
         )
-        fig.update_layout(title_text="Most Viewed Screens (Last 7 Days)")
+        fig.update_layout(title_text="Most Viewed Screens")
 
 
         st.plotly_chart(fig, use_container_width=False)
