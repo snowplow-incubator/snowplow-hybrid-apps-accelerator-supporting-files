@@ -13,6 +13,7 @@ def connect_to_snowflake():
         account=db_creds["account"],
         database=db_creds["database"],
         warehouse=db_creds["warehouse"],
+        role=db_creds["role"],
         schema=db_creds["schema"]
     )
 
